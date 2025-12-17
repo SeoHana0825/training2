@@ -1,3 +1,5 @@
+package Flowchart;
+
 import java.util.Scanner;
 
 public class MinorAdult {
