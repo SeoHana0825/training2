@@ -1,4 +1,4 @@
-package Quest;
+package Quest.Calculater;
 
 import java.util.Scanner;
 

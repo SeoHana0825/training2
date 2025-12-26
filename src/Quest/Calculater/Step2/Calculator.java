@@ -1,4 +1,4 @@
-package Quest.Setp2;
+package Quest.Calculator.Step2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,5 +40,8 @@ public class Calculator {
         // 7 삭제
     public void removeResult() {
         results.remove(0); // 인덱스는 [0][1][2][3] / 실제 보이는건 [1][2][3][4]
+    }
+
+    public static class CalculatorTraining {
     }
 }

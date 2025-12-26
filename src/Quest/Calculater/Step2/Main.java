@@ -1,4 +1,4 @@
-package Quest.Setp2;
+package Quest.Calculator.Step2;
 
 import java.util.List;
 import java.util.Scanner;
