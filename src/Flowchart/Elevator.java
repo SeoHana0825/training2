@@ -11,30 +11,33 @@ public class Elevator {
         System.out.println("==엘레베이터 프로그램 시작==");
 
         System.out.println("현재 층을 입력해주세요");
-        int floor = Integer.parseInt(sc.nextLine());
+        int floor = sc.nextInt();
+        if (floor == 0) {
+            System.out.println("현재 정비중입니다. 조금만 기다려 주세요");
+            return;
+        }
 
         System.out.println("도착 층을 입력해주세요");
-        int arrival = Integer.parseInt(sc.nextLine());
+        int arrival = sc.nextInt();
 
         while (true) {
-            if (floor == 0) {
-                System.out.println("현재 정비중입니다. 조금만 기다려 주세요");
-                break;
-            } else if (floor == arrival) {
+
+            int result = 0;
+            int result2 = 0;
+
+            if (floor == arrival) {
                 System.out.println("이미 같은 층입니다.");
-
-                System.out.println("다시 누르시겠습니까?");
-
-                if ("yes".equals(sc.nextLine())) {
-                    sc.next();
-                }
+                break;
             } else if (floor < arrival) {
-                System.out.println(arrival + "층으로 올라갑니다");
+                result = floor += arrival;
+                System.out.println(arrival + "층으로 " + result + "층 올라갑니다");
                 break;
             } else if (floor > arrival) {
-                System.out.println(arrival + "층으로 내려갑니다");
+                result2 = floor -= arrival;
+                System.out.println(arrival + "층으로 " + result2 + "층 내려갑니다");
                 break;
             }
-        } sc.close();
+        }
+        sc.close();
     }
 }
