@@ -25,7 +25,7 @@ public class Calculate {
             System.out.println("사칙연산 (+, -, *, /)을 입력해주세요");
             char op = sc.next().charAt(0);
 
-            int result = 0;
+            int result;
 
             switch (op) {
                 case '+' -> result = num1 + num2;
